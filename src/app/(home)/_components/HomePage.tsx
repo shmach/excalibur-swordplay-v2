@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { CardBody, CardContainer } from "@/components/3dCard";
 import { AnimatedContainer } from "@/components/AnimatedContainer";
@@ -11,7 +11,8 @@ import { BicepsFlexed, Calendar, Mail, Scroll, ShieldBanIcon, Sword, Swords, Use
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function Home() {
+
+export function HomePage() {
   return (
     <section className="w-full h-full mt-[70px] xl:mt-[90px] bg-white flex flex-col justify-center items-center overflow-hidden">
       <Banner />
@@ -374,5 +375,5 @@ export default function Home() {
         </AnimatedContainer>
       </div>
     </section>
-  );
+  )
 }

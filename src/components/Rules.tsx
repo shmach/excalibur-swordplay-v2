@@ -47,20 +47,17 @@ export function Rules({ duration }: { duration: number }) {
   const [timer, setTimer] = useState(0);
 
   useEffect(() => {
+    setTimer(0);
+
     const progressTimer = setInterval(() => {
       setTimer(prevState => {
         if (prevState >= 101) {
           clearInterval(progressTimer);
-          if (activeRule === 2) {
-            setActiveRule(0);
-            return 0
-          } else {
-            setActiveRule(prevState => prevState + 1);
-            return 0
-          }
-        } else {
-          return prevState + 100 / (duration * 50);
+
+          setActiveRule(prevState => (prevState + 1) % 3);
+          return 0;
         }
+        return prevState + 100 / (duration * 50);
       });
     }, 20);
     return () => clearInterval(progressTimer)
