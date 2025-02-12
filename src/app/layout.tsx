@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { HeaderMenu } from "@/components/HeaderMenu";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sedan } from "next/font/google";
@@ -41,6 +42,7 @@ export default function RootLayout({
         <main className="min-w-full min-h-full flex flex-col flex-1">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
