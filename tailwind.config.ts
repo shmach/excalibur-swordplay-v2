@@ -16,6 +16,9 @@ export default {
 			},
 		},
 		extend: {
+			fontFamily: {
+				medieval: ["Sedan"],
+			},
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
