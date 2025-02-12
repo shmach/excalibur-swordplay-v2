@@ -1,3 +1,4 @@
+import { HeaderMenu } from "@/components/HeaderMenu";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sedan } from "next/font/google";
 import "./globals.css";
@@ -36,7 +37,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sedan.variable} antialiased min-h-screen min-w-screen`}
       >
-        {children}
+        <HeaderMenu />
+        <main className="min-w-full min-h-full flex flex-col flex-1">
+          {children}
+        </main>
       </body>
     </html>
   );
