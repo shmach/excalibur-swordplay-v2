@@ -2,7 +2,7 @@
 
 import { AnimatedContainer } from "@/components/AnimatedContainer";
 import { NextEventCard } from "@/components/NextEventCard";
-import { swordplay2023Photos } from "@/lib/swordplay_2023_pics";
+import { swordplay2023Photos } from "@/lib/swordplayPictures";
 
 export default function EventsPage() {
   return (

@@ -9,6 +9,7 @@ import { Plans } from "@/components/Plans";
 import { Rules } from "@/components/Rules";
 import { BicepsFlexed, Calendar, Mail, Scroll, ShieldBanIcon, Sword, Swords, User } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -39,9 +40,11 @@ export function HomePage() {
               </div>
               <CardContainer className="mb-8">
                 <CardBody className="flex flex-col justify-center items-center">
-                  <img
+                  <Image
                     src="https://utfs.io/f/3b4ed472-4e67-47e3-a753-6df1183d8ca5-jgbhhj.jpg"
                     alt="Foto do Swordplay realizado na Comic-Sul 2023"
+                    width={350}
+                    height={550}
                     className="w-[350px] xl:w-[300px]"
                   />
                   <span className="text-center mt-1 text-medium text-sm text-gray-500">Swordplay na Comic-Sul 2023</span>
@@ -68,9 +71,11 @@ export function HomePage() {
               </p>
               <CardContainer className="mb-8">
                 <CardBody className="flex flex-col justify-center items-center">
-                  <img
+                  <Image
                     src="https://utfs.io/f/aeL4FiT9yPbUyQxB6P1COezcd6rJwuYl5ZnkpbBV9AaXLfKN"
                     alt="Foto do Swordplay realizado na Comic-Sul 2023"
+                    width={500}
+                    height={300}
                     className="w-[500px] mt-8"
                   />
                   <span className="text-center mt-1 text-medium text-sm text-gray-500">Escudos utilizados no Swordplay</span>
@@ -140,9 +145,11 @@ export function HomePage() {
               </div>
               <CardContainer className="mb-16 xl:mb-0">
                 <CardBody className="flex flex-col justify-center items-center">
-                  <img
+                  <Image
                     src="https://utfs.io/f/962e3484-6f26-4d76-9373-7651942660f7-jgbhhk.jpg"
                     alt="Foto do Swordplay realizado na Comic-Sul 2023"
+                    width={350}
+                    height={550}
                     className="w-[350px] xl:w-[300px]"
                   />
                   <span className="text-center mt-1 text-medium text-sm text-gray-500">Swordplay na Comic-Sul 2023</span>
@@ -172,18 +179,22 @@ export function HomePage() {
               <div className="w-full flex flex-col md:flex-row justify-center gap-10 items-center mt-8">
                 <CardContainer>
                   <CardBody className="flex flex-col justify-center items-center">
-                    <img
+                    <Image
                       src="https://utfs.io/f/b79d5010-430d-4604-ad75-1bf2bfd3a6eb-jgbhhh.jpg"
                       alt="Crianças jogam Swordplay no evento realizado na Comic-Sul 2023"
+                      width={350}
+                      height={550}
                       className="w-[350px] xl:w-[300px]"
                     />
                   </CardBody>
                 </CardContainer>
                 <CardContainer>
                   <CardBody className="flex flex-col justify-center items-center">
-                    <img
+                    <Image
                       src="https://utfs.io/f/ed6e5f65-e039-4707-8474-caf41596d804-jgbhhi.jpg"
                       alt="novamente crianças jogam Swordplay no evento realizado na Comic-Sul 2023"
+                      width={350}
+                      height={550}
                       className="w-[350px] xl:w-[300px]"
                     />
                   </CardBody>
@@ -289,10 +300,13 @@ export function HomePage() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="/images/mais-facil-patrocinador.png"
                         className="w-[250px] rounded-lg"
-                        alt="Logo da Mais Fácil Engenharia e Construção" />
+                        width={250}
+                        height={250}
+                        alt="Logo da Mais Fácil Engenharia e Construção"
+                      />
                     </a>
                   </motion.div>
 
@@ -308,10 +322,13 @@ export function HomePage() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="/images/sulbox-patrocinador.png"
                         className="w-[250px] rounded-lg"
-                        alt="Logo da Mais Fácil Engenharia e Construção" />
+                        width={250}
+                        height={250}
+                        alt="Logo da Mais Fácil Engenharia e Construção"
+                      />
                     </a>
                   </motion.div>
 
@@ -327,10 +344,13 @@ export function HomePage() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="/images/aspen-odontologia-patrocinador.jpg"
                         className="w-[250px] rounded-lg"
-                        alt="Logo da Aspen Odontologia" />
+                        width={250}
+                        height={250}
+                        alt="Logo da Aspen Odontologia"
+                      />
                     </a>
                   </motion.div>
 
@@ -358,9 +378,11 @@ export function HomePage() {
                     className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center"
                   >
                     Entre em contato conosco
-                    <img
+                    <Image
                       src="/images/whatsapp.svg"
                       alt="botão para grupo do whatsapp"
+                      width={24}
+                      height={24}
                       className="w-6 h-6 ml-2"
                     />
                   </a>
