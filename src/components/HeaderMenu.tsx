@@ -2,19 +2,48 @@
 
 import { routes } from "@/utils/routes";
 import { BookUser, Calendar, Home } from "lucide-react";
-import { motion } from "motion/react";
+import { motion, useScroll, useSpring } from "motion/react";
 import { AnimatedLink } from "./AnimatedLink";
 import { SideMenu } from "./SideMenu";
 
 export function HeaderMenu() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
+
   return (
     <>
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ ease: "easeInOut" }}
-        className="w-full h-[100px] bg-primary fixed top-0 left-0 z-20 shadow-sm shadow-white flex justify-between md:justify-around items-center px-8 xl:px-24"
+        className="w-full h-[100px] bg-gradient-to-r from-primary to-slate-900 fixed top-0 left-0 z-20 flex justify-between md:justify-around items-center px-8 xl:px-24"
       >
+        <motion.div
+          id="scroll-indicator"
+          style={{
+            scaleX,
+            originX: 0,
+            width: "100%",
+            height: "2px",
+            backgroundColor: "#fff",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            zIndex: 10
+          }}
+        />
+        <div
+          style={{
+            width: "100%",
+            height: "2px",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            zIndex: 0
+          }}
+          className="bg-zinc-600"
+        />
+
         {/* Mobile Menu */}
         <div className="block lg:hidden w-fit ">
           <img src="/images/logo-excalibur-swordplay-sm.png" alt="Logo do Excalibur Swordplay" />

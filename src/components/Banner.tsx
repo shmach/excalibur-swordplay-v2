@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 
 export function Banner() {
   return (
-    <div className="w-full h-full bg-primary py-6 relative font-medieval">
+    <div className="w-full h-full bg-gradient-to-r from-primary to-slate-900 py-6 relative font-medieval">
       <motion.div
         className='absolute w-full h-full top-0 left-0 bg-primary'
         initial={{

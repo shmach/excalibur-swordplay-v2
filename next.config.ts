@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
 			{
 				hostname: "utfs.io",
 			},
+			{
+				hostname: "zx6c572zd2.ufs.sh",
+			},
 		],
 	},
 };

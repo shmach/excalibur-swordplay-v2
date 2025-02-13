@@ -146,8 +146,8 @@ export function HomePage() {
               <CardContainer className="mb-16 xl:mb-0">
                 <CardBody className="flex flex-col justify-center items-center">
                   <Image
-                    src="https://utfs.io/f/962e3484-6f26-4d76-9373-7651942660f7-jgbhhk.jpg"
-                    alt="Foto do Swordplay realizado na Comic-Sul 2023"
+                    src="https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbUt4N0R0RJQBwWzj18nOxGNdpefbD9hq7vATJX"
+                    alt="Foto do Swordplay realizado na Comic-Sul 2024"
                     width={350}
                     height={550}
                     className="w-[350px] xl:w-[300px]"
@@ -243,7 +243,10 @@ export function HomePage() {
                   Quando será o próximo evento?
                 </h2>
                 <p className="text-lg indent-6 text-justify">
-                  <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> será na Comic-Sul 2024 no dia 23 de Novembro de 2024, no Shopping Santa Cruz.
+                  <span className="text-3xl font-medieval font-medium">A</span>inda não temos previsão para o próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span>, mas você pode entrar no nosso grupo do Whatsapp onde divulgamos todas as novidades e eventos.
+                </p>
+                <p className="text-lg indent-6 text-justify">
+                  <span className="text-3xl font-medieval font-medium">A</span>lém disso, o <span className="font-bold text-medieval">Excalibur Swordplay</span> organiza treinos gratuitos mensalmente! Então entre já no nosso grupo!!!
                 </p>
                 <div className="w-full flex justify-center items-center">
                   <NextEventCard />
@@ -285,7 +288,7 @@ export function HomePage() {
                   Patrocinadores
                 </h2>
                 <p className="text-lg indent-6 text-justify">
-                  <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> contará com o Apoio das seguintes empresas
+                  <span className="text-3xl font-medieval font-medium">O</span> <span className="font-bold text-medieval">Excalibur Swordplay</span> é patrocinado pelas seguintes empresas:
                 </p>
                 <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8">
                   <motion.div

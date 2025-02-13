@@ -9,7 +9,7 @@ interface HeroSectionProps {
 export function HeroSection({ background, className, children }: HeroSectionProps) {
   return (
     <div className={cn(
-      background === 'dark' ? 'bg-primary' : 'bg-transparent',
+      background === 'dark' ? 'bg-gradient-to-r from-primary to-slate-900' : 'bg-transparent',
       className, "relative"
     )}>
       {children}
