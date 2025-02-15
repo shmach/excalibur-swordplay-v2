@@ -1,12 +1,25 @@
 'use client';
 
 import { AnimatedContainer } from "@/components/AnimatedContainer";
+import Carousel, { SlideData } from "@/components/Carousel";
 import { NextEventCard } from "@/components/NextEventCard";
-import { swordplay2023Photos } from "@/lib/swordplayPictures";
+import { swordplay2023Photos, swordplay2024VerticalPhotos } from "@/lib/swordplayPictures";
 
 export default function EventsPage() {
+  const swordplay2023Carousel: SlideData[] = swordplay2023Photos.map((photo) => {
+    return {
+      src: photo.src
+    }
+  })
+
+  const swordplay2024Carousel: SlideData[] = swordplay2024VerticalPhotos.map((photo) => {
+    return {
+      src: photo.src
+    }
+  })
+
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[100px] px-5 py-6">
+    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[100px] px-5 py-6 overflow-x-hidden">
       <AnimatedContainer
         initial={{ y: 700 }}
         animate={{ y: 0 }}
@@ -20,25 +33,20 @@ export default function EventsPage() {
           <h2 className="w-fit font-medieval font-semibold text-xl text-center border-b border-gray-500 py-1">Próximo Evento de Swordplay:</h2>
           <NextEventCard />
         </div>
-        <div className="w-full mt-16 flex flex-col justify-center items-center mb-24">
-          <h2 className="font-medieval font-semibold text-xl text-center border-b border-gray-500 py-1">
-            Swordplay na Comic-Sul 2023
-          </h2>
-          <ul className="w-full flex flex-col justify-center items-center gap-4 lg:gap-x-8 lg:flex-row lg:flex-wrap xl:gap-x-32">
-            {
-              swordplay2023Photos.map((photo) => (
-                <li key={photo.src} className="mt-10">
-                  <img
-                    loading="lazy"
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-[350px] xl:w-[400px] object-cover rounded-lg shadow-md hover:scale-110 transition-transform"
-                  />
-                </li>
-              ))
-            }
-          </ul>
-        </div>
+        <section className="min-w-full min-h-full flex flex-col justify-center items-center gap-8">
+          <div className="w-full mt-16 flex flex-col justify-center items-center mb-24 gap-8">
+            <h2 className="font-medieval font-semibold text-xl text-center border-b border-gray-500 py-1">
+              Swordplay na Comic-Sul 2024
+            </h2>
+            <Carousel slides={swordplay2024Carousel} />
+          </div>
+          <div className="w-full mt-16 flex flex-col justify-center items-center mb-24 gap-8">
+            <h2 className="font-medieval font-semibold text-xl text-center border-b border-gray-500 py-1">
+              Swordplay na Comic-Sul 2023
+            </h2>
+            <Carousel slides={swordplay2023Carousel} />
+          </div>
+        </section>
       </AnimatedContainer>
     </section>
   )

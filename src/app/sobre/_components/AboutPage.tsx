@@ -4,6 +4,7 @@ import { AnimatedContainer } from "@/components/AnimatedContainer";
 import { Plans } from "@/components/Plans";
 import { Instagram, Swords } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export function AboutPage() {
   return (
@@ -29,7 +30,12 @@ export function AboutPage() {
           </p>
           <div className="w-full flex justify-center items-center">
             <div className="bg-primary w-fit p-3 rounded-lg">
-              <img src="/images/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-44 h-44 lg:w-56 lg:h-56" />
+              <Image
+                src="/images/logo-excalibur-swordplay-md.png"
+                alt="Logo do Excalibur Swordplay"
+                width={176}
+                height={176}
+              />
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ export const swordplay2023Photos = [
 	},
 ];
 
-export const swordplay2024Photos = [
+export const swordplay2024VerticalPhotos = [
 	{
 		src: "https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbUFsUnKvk2LHqSVhQEmgsxJpDIju719OXRN5Ga",
 		alt: "Dois jogadores iniciando a batalha no evento de Swordplay na Comic-Sul 2024",
@@ -39,8 +39,8 @@ export const swordplay2024Photos = [
 		alt: "Jogadores reunidos na arena no evento de Swordplay na Comic-Sul 2024",
 	},
 	{
-		src: "https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbU7fiDoiy35SFDNowz0jZqOTXsAYJW2tH9EaBl",
-		alt: "Organizadores do evento de Swordplay na Comic-Sul 2024 posando com o equipamento",
+		src: "https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbUbH6mp7wBSHfD9FLA6lI8XpexjhMQPNi5gvEc",
+		alt: "Organizadores do evento batalhando no Swordplay na Comic-Sul 2024",
 	},
 	{
 		src: "https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbUt4N0R0RJQBwWzj18nOxGNdpefbD9hq7vATJX",
