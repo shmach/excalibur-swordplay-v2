@@ -152,7 +152,7 @@ export function HomePage() {
                     height={550}
                     className="w-[350px] xl:w-[300px]"
                   />
-                  <span className="text-center mt-1 text-medium text-sm text-gray-500">Swordplay na Comic-Sul 2023</span>
+                  <span className="text-center mt-1 text-medium text-sm text-gray-500">Swordplay na Comic-Sul 2024</span>
                 </CardBody>
               </CardContainer>
             </div>

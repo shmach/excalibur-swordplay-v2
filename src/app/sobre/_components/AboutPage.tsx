@@ -25,11 +25,8 @@ export function AboutPage() {
             <Swords className="mr-2 mt-1" />
             Quem nós somos?
           </h2>
-          <p className="text-lg indent-6 text-justify">
-            <span className="text-3xl font-medieval font-medium">O</span> <span className="font-medium underline">Excalibur Swordplay</span> é organizado por três amigos de forma independente que gostam muito do tema medieval, seja tanto de fantasia como nos RPGs, como também gostamos do medieval "realista".
-          </p>
           <div className="w-full flex justify-center items-center">
-            <div className="bg-primary w-fit p-3 rounded-lg">
+            <div className="bg-primary p-3 rounded-lg">
               <Image
                 src="/images/logo-excalibur-swordplay-md.png"
                 alt="Logo do Excalibur Swordplay"
@@ -37,6 +34,18 @@ export function AboutPage() {
                 height={176}
               />
             </div>
+          </div>
+          <p className="text-lg indent-6 text-justify">
+            <span className="text-3xl font-medieval font-medium">O</span> <span className="font-medium underline">Excalibur Swordplay</span> é organizado por três amigos de forma independente que gostam muito do tema medieval, seja tanto de fantasia como nos RPGs, como também gostamos do medieval "realista".
+          </p>
+          <div className="w-full flex flex-col justify-center items-center">
+            <Image
+              src="https://zx6c572zd2.ufs.sh/f/aeL4FiT9yPbU7fiDoiy35SFDNowz0jZqOTXsAYJW2tH9EaBl"
+              alt="Organizadores do Swordplay posando com os equipamentos"
+              width={500}
+              height={470}
+            />
+            <span className="text-center mt-1 text-medium text-sm text-gray-500">Organizadores do Swordplay.</span>
           </div>
         </div>
       </AnimatedContainer>
