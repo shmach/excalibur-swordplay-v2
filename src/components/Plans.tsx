@@ -18,7 +18,7 @@ export function Plans() {
         </ul>
         <div className="w-full h-20 flex justify-center items-center border-t">
           <p className="font-bold text-3xl ">
-            R$ 40,00
+            R$ 80,00
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export function Plans() {
         </ul>
         <div className="w-full h-20 flex justify-center items-center border-t">
           <p className="font-bold text-3xl ">
-            R$ 80,00
+            R$ 150,00
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export function Plans() {
         </ul>
         <div className="w-full h-20 flex justify-center items-center border-t">
           <p className="font-bold text-3xl ">
-            R$ 100,00
+            R$ 270,00
           </p>
         </div>
       </div>

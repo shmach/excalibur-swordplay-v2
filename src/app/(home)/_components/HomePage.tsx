@@ -246,7 +246,7 @@ export function HomePage() {
                   <span className="text-3xl font-medieval font-medium">A</span>inda não temos previsão para o próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span>, mas você pode entrar no nosso grupo do Whatsapp onde divulgamos todas as novidades e eventos.
                 </p>
                 <p className="text-lg indent-6 text-justify">
-                  <span className="text-3xl font-medieval font-medium">A</span>lém disso, o <span className="font-bold text-medieval">Excalibur Swordplay</span> organiza treinos gratuitos mensalmente! Então entre já no nosso grupo!!!
+                  <span className="text-3xl font-medieval font-medium">A</span>lém disso, o <span className="font-bold text-medieval">Excalibur Swordplay</span> organiza <span className="text-xl font-medieval font-bold underline">treinos</span> gratuitos mensalmente! Então entre já no nosso grupo!!!
                 </p>
                 <div className="w-full flex justify-center items-center">
                   <NextEventCard />
